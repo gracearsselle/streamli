@@ -93,7 +93,7 @@ def generate_compatible_sample_data():
 def load_prediction_model():
     try:
         # Remplacez par le chemin vers votre modèle sauvegardé
-        model = joblib.load('my_best_pipeline.pkl')
+        model = joblib.load('tree_model.pkl')
         return model
     except FileNotFoundError:
         st.error("❌ Modèle non trouvé. Assurez-vous que 'best_pipeline.pkl' est dans le bon répertoire.")
